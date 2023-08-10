@@ -21,3 +21,9 @@ button.addEventListener("click",() => {
     else{
         message.textContent = "Lower! Attempts: " + attempts;
     }
+    if(attempts === 10) {
+        message.textContent = "Sorry you lost. Try again";
+        attempts = 0;
+        return;
+    }
+})
