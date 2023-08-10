@@ -11,4 +11,10 @@ button.addEventListener("click",() => {
         return;
     }
     attempts++;
-    
+
+    if(userguess === targetNum){
+        message.textContent = "YAY CONGRATS YOU WON! Attempts: " + attempts;
+    }
+    else if (userguess < targetNum) {
+        message.textContent = "Higher! Attempts: " + attempts;
+    }
