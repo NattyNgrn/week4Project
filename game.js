@@ -18,3 +18,6 @@ button.addEventListener("click",() => {
     else if (userguess < targetNum) {
         message.textContent = "Higher! Attempts: " + attempts;
     }
+    else{
+        message.textContent = "Lower! Attempts: " + attempts;
+    }
